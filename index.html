@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>  
+  <div id="header">
+    <div class="container">
+      <nav> 
+        <img src="Dawit2.png" class="logo" >
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list" onclick="openmenu()"style="cursor: pointer;"></i>
+        <i class="bi bi-list clickable" onclick="openmenu()"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100" fill="currentColor" class="bi bi-list clickable" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer </p>
+        <h1>
+          Hi,I'm <span>Dawit</span><br> Mengesha From Ethiopia
+        </h1>
+      </div>
+    </div>
+  </div>
+<!------------------------------------------------------------------ABOUT--------------------------------------------------------------------------------------->
+<div id="About">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="IMG3.JPG">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          Welcome to My Portfolio!
+          Hi, I’m Dawit Mengesha Beriso, a third-year Software Engineering student at Haramaya University. 
+          I’m passionate about coding and problem-solving, with skills in C++, Python, Java, and web development. 
+          My journey in tech has taught me to create innovative and efficient solutions while focusing on clean  
+          code and great user experiences.
+          This portfolio is a collection of my work, showcasing projects that highlight my programming expertise 
+          and love for technology. Feel free to explore and connect with me—I’m always excited to collaborate and 
+          bring ideas to life. Thank you for visiting.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab"id="skills"> 
+          <ul>
+            <li><span>UI/UX</span><br>designing Web/App interfaces</li>
+            <li><span>Web development</span><br> Web App development</li>
+            <li><span>App development</span><br>building Android/iOS apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents"id="experience"> 
+          <ul>
+            <li><span>2015</span><br>UX/UI design traning at leadstar acadmey</li>
+            <li><span>2016</span><br>  object oriented programming at haramaya university</li>
+            <li><span>2016-2017</span><br>networking and web development at haramaya university</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education"> 
+          <ul>
+            <li><span>2012</span><br>UX/UI design traning at leadstar acadmey</li>
+            <li><span>2013-2015</span><br> front-end traning at haramaya university</li>
+            <li><span>2016-2017</span><br>learn java and python at haramaya university</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------------------------------------------------------------------------------------------------services-------------------------------------------------------------------------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="bi bi-code"></i>
+        <h2>web design</h2>
+        <p>Web design is the process of planning, 
+          creating, and maintaining websites.It 
+          involves visual aesthetics, layout, 
+          typography, and user interface design,
+          ensuring functionality and usability. 
+          Effective web design balances creativity
+          and practicality, adapting to diverse 
+          devices and user needs, enhancing online
+           experiences,and meeting objectives 
+           like engagement or conversions.</p>
+        <a href="https://www.webdesign.com" target="_blank">Learn more</a>
+
+      </div>
+      <div>
+        <i class="bi bi-crop"></i>
+        <h2>UI/UX design</h2>
+        <p>UI/UX design focuses on crafting user-friendly
+          digital experiences. User Interface (UI) design
+          emphasizes visual elements, like buttons and
+          layouts, ensuring intuitive navigation. User 
+          Experience (UX) design centers on user satisfaction, 
+          optimizing functionality, accessibility, and engagement. 
+          Together, they create seamless interactions, blending 
+          aesthetics and usability to meet user needs and goals 
+          effectively.</p>
+        <a href="https://flatironschool.com/blog/what-is-ux-ui-design/" target="_blank">Learn more</a>
+      </div>
+      <div>
+        <i class="bi bi-apple"></i>
+        <h2>App design</h2>
+        <p>App design is the process of creating visually appealing,
+          functional, and user-friendly mobile or desktop applications. 
+          It combines UI and UX principles to ensure intuitive navigation, 
+          responsiveness, and accessibility. Effective app design focuses
+          on user needs, enhancing engagement and performance while aligning 
+          with the app's purpose<br> and platform-specific guidelines.</p>
+        <a href="https://dribbble.com/tags/mobile-app-design"target="_blank" class="learn">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------------portfolio-------------------------------------------------------------------------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="download 1.jpg" height="1000" >
+        <div class="layer">
+          <h3>web-design</h3>
+          <p>Web design creates functional, 
+            visually appealing, and user-friendly websites.</p>
+            <a href="https://fontawesome.com/"style="cursor: pointer;" target="_blank"><i class="bi bi-box-arrow-up-right"></i></i></a>
+        </div>
+      </div> 
+      <div class="work">
+          <img src="download 2.jpg" height="1000" >
+          <div class="layer">
+            <h3>UI/UX design</h3>
+            <p>UI/UX design enhances usability 
+              and aesthetics for seamless user experiences.</p>
+              <a href="https://www.proto.io/" style="cursor: pointer;"target="_blank"><i class="bi bi-box-arrow-up-right"></i></i></a>
+          </div>
+      </div>
+        <div class="work">
+          <img src="download 3.jpg" height="1000">
+          <div class="layer">
+            <h3>App design</h3>
+            <p>App design focuses on creating 
+              functional, intuitive, and user-friendly.</p>
+              <a href="https://www.appgyver.com/" style="cursor: pointer;"target="_blank"><i class="bi bi-box-arrow-up-right"></i></i></a>
+          </div>
+        </div>
+    </div>
+    <a href="https://zale.hr/en/what-is-user-experience-and-interface-design-how-to-create-the-best-website-and-mobile-app-with-ux-ui-design/"  target="_blank" class="btn" style="height: 80px; color: black;" title="Click to explore more about my design projects and see detailed examples.">
+      See more
+    </a>
+    
+    <!---
+    <a href="#" class="btn" style="height: 80px;color: black;">See more</a>
+  </div>
+</div>
+----->
+<!--------------------------------------------------------------------------------------------------------------Contact------------------------------------------------------------------------------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">contact me</h1>  
+        <p class="contact-item">
+          <i class="bi bi-envelope-at" style="font-size: 80px;"></i>
+          <span>contact@example.com </span> 
+          </p><br>
+          <p class="contact-item1 ">
+            <i class="bi bi-telephone" style="font-size: 80px;"></i>
+            <span>0906639740</span>
+          </p>
+          <div class="social-icons">
+                  <a href="https://facebook.com/dave_ontrack2/"target="_blank"> <i class="bi bi-facebook"></i></a>
+                  
+                  <a href="https://www.instagram.com/dave_ontrack2/"style="color:red;"  target="_blank"> <i class="bi bi-instagram"></i></a>
+                  
+                  <a href="https://mail.google.com/mail/u/0/#inbox"style="color:blue;"  target="_blank"> <i class="bi bi-envelope-fill"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/dawit-beriso-b7b417321/" style="color:red;"target="_blank"> <i class="bi bi-linkedin"></i></a>
+                 
+        </div>  
+      </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="you're name" required/>
+        <input type="email" name="email" placeholder="you're email"required>
+        <textarea name="message" rows="6" placeholder="you're message" required></textarea>
+        <button type="submit" class="btn btn2" style="color: black; background:burlywood;">submit</button>
+      </form>
+      
+      <span id="msg"></span>
+    
+      <div class="cv-button">
+        <a href="DawitMengeshaResume (3).pdf" download class="btn btn2" style="height: 50px;color: black;"> Download CV</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ 
+<div class="copyright">
+  <p> &copy; 2024. All rights reserved.</p>
+
+</div>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  
+  var sidemeu =document.getElementById("sidemenu") 
+
+  function openmenu(){
+    sidemeu.style.right ="0";
+
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxnGRdXwtJNZ-op6ur_xFDzrxWrfaFBVeyu6bG2RJiYQWrRawCbeIj69PSYWtfzm2DB3g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML ="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },1000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  <script>
+    const button = document.querySelector('.btn2');
+
+document.addEventListener('mousemove', function(event) {
+  const buttonRect = button.getBoundingClientRect();
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  
+  const distance = Math.sqrt(
+    Math.pow(mouseX - (buttonRect.left + buttonRect.width / 2), 2) +
+    Math.pow(mouseY - (buttonRect.top + buttonRect.height / 2), 2)
+  );
+
+  
+  const threshold = 100; 
+
+  if (distance < threshold) {
+    button.style.backgroundColor = 'blue'; 
+  } else {
+    button.style.backgroundColor = 'burlywood'; 
+  }
+})
+;
+
+  </script>
+</body>
+</html>
